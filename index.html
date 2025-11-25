@@ -1,4 +1,3 @@
-                            <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
@@ -6,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMP Strada Santa Maria 1</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -27,10 +25,8 @@
       }
     </script>
     
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -62,11 +58,9 @@
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- NAVBAR -->
     <nav class="bg-[#0056b3] text-white sticky top-0 z-50 shadow-lg transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo -->
                 <div class="flex items-center space-x-3 cursor-pointer" onclick="window.scrollTo(0,0)">
                     <div class="bg-white p-1 rounded-full">
                         <i data-lucide="graduation-cap" class="h-8 w-8 text-[#0056b3]"></i>
@@ -74,7 +68,6 @@
                     <span class="font-bold text-lg sm:text-xl tracking-wide">SMP Strada Santa Maria 1</span>
                 </div>
                 
-                <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#home" class="nav-link px-4 py-2 rounded-md text-sm font-medium text-blue-100 hover:bg-blue-600 hover:text-white transition-all">Beranda</a>
@@ -85,7 +78,6 @@
                     </div>
                 </div>
                 
-                <!-- Mobile Menu Button -->
                 <div class="-mr-2 flex md:hidden">
                     <button type="button" onclick="toggleMobileMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-blue-200 hover:text-white hover:bg-blue-600 focus:outline-none">
                         <i data-lucide="menu" id="menu-icon" class="block h-6 w-6"></i>
@@ -95,7 +87,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div class="hidden md:hidden bg-blue-800 transition-all duration-300 ease-in-out" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-inner">
                 <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-blue-200 hover:bg-blue-700 hover:text-white">Beranda</a>
@@ -107,19 +98,14 @@
         </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <main class="flex-grow">
         
-        <!-- HOME / HERO SECTION -->
         <section id="home" class="relative h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden scroll-mt-16">
-            <!-- Background -->
             <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 transform scale-105"
                  style="background-image: url('unnamed.jpg');">
             </div>
-            <!-- Overlay -->
             <div class="absolute inset-0 bg-black/60 z-10"></div>
             
-            <!-- Content -->
             <div class="relative z-20 text-center px-4 max-w-5xl mx-auto flex flex-col items-center justify-center h-full animate-fade-in">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight drop-shadow-xl tracking-tight">
                     Selamat Datang di <br />
@@ -141,7 +127,6 @@
             </div>
         </section>
 
-        <!-- ABOUT SECTION -->
         <section id="about" class="bg-white py-16 scroll-mt-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -149,9 +134,7 @@
                     <p class="text-gray-600 max-w-2xl mx-auto">Mengenal lebih dekat profil, sejarah, dan nilai-nilai luhur yang dijunjung tinggi oleh SMP Strada Santa Maria 1.</p>
                 </div>
 
-                <!-- Visi Misi -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <!-- Visi -->
                     <div class="bg-blue-50 p-8 rounded-2xl border-l-4 border-[#0056b3] shadow-sm hover:shadow-md transition-shadow">
                         <div class="flex items-center mb-4">
                             <i data-lucide="eye" class="w-8 h-8 text-[#0056b3] mr-3"></i>
@@ -161,7 +144,6 @@
                             Komunitas pendidikan yang unggul, peduli, dan berjiwa melayani. Menjadikan sekolah sebagai tempat persemaian bibit unggul yang beriman dan berilmu.
                         </p>
                     </div>
-                    <!-- Misi -->
                     <div class="bg-yellow-50 p-8 rounded-2xl border-l-4 border-[#f59e0b] shadow-sm hover:shadow-md transition-shadow">
                         <div class="flex items-center mb-4">
                             <i data-lucide="target" class="w-8 h-8 text-[#f59e0b] mr-3"></i>
@@ -175,8 +157,7 @@
                     </div>
                 </div>
 
-                <!-- Sejarah -->
-                <div class="flex flex-col md:flex-row items-start gap-12 bg-white rounded-2xl border-l-4 border-[#0056b3] p-6 md:p-8 shadow-lg">
+                <div class="flex flex-col md:flex-row items-start gap-12 bg-white rounded-2xl border-l-4 border-[#d3d3d3] p-6 md:p-8 shadow-lg">
                     <div class="w-full md:w-1/3">
                         <div class="sticky top-24">
                             <img src="ChatGPT Image Nov 24, 2025, 02_58_20 PM.png" alt="Gedung Lama" class="rounded-xl shadow-lg w-full object-cover"/>
@@ -199,7 +180,6 @@
             </div>
         </section>
 
-        <!-- ACHIEVEMENTS SECTION -->
         <section id="achievements" class="bg-[#0056b3] py-16 scroll-mt-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -212,7 +192,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Item 1 -->
                     <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border-2 border-yellow-400">
                         <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-4 mx-auto">
                             <i data-lucide="trophy" class="w-7 h-7 text-[#f59e0b]"></i>
@@ -224,7 +203,6 @@
                             <p class="text-gray-600 text-sm leading-relaxed">Meraih medali emas dalam bidang Matematika tingkat Kota Tangerang.</p>
                         </div>
                     </div>
-                    <!-- Item 2 -->
                     <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border-2 border-blue-400">
                         <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 mx-auto">
                             <i data-lucide="medal" class="w-7 h-7 text-[#0056b3]"></i>
@@ -236,7 +214,6 @@
                             <p class="text-gray-600 text-sm leading-relaxed">Tim Futsal Putra berhasil masuk final dan meraih posisi runner-up.</p>
                         </div>
                     </div>
-                    <!-- Item 3 -->
                     <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border-2 border-yellow-400">
                         <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-4 mx-auto">
                             <i data-lucide="star" class="w-7 h-7 text-[#f59e0b]"></i>
@@ -248,7 +225,6 @@
                             <p class="text-gray-600 text-sm leading-relaxed">Kompetisi paduan suara tingkat provinsi Banten.</p>
                         </div>
                     </div>
-                    <!-- Item 4 -->
                     <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 duration-300 border-2 border-blue-400">
                         <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 mx-auto">
                             <i data-lucide="award" class="w-7 h-7 text-[#0056b3]"></i>
@@ -264,7 +240,6 @@
             </div>
         </section>
 
-        <!-- GALLERY SECTION -->
         <section id="gallery" class="bg-white min-h-screen py-16 scroll-mt-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
@@ -273,59 +248,50 @@
                 </div>
                 
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
-                    <!-- Images will be generated or static -->
-                    <!-- Image 1 -->
                     <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=1')">
-                        <img src="https://picsum.photos/600/600?random=1" alt="Galeri 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="1.jpg" alt="Galeri 1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                    <!-- Image 2 -->
                     <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=2')">
-                        <img src="https://picsum.photos/600/600?random=2" alt="Galeri 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="2.jpg" alt="Galeri 2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 3 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=3')">
-                        <img src="https://picsum.photos/600/600?random=3" alt="Galeri 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="3.jpg" alt="Galeri 3" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 4 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=4')">
-                        <img src="https://picsum.photos/600/600?random=4" alt="Galeri 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="4.jpg" alt="Galeri 4" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 5 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=5')">
-                        <img src="https://picsum.photos/600/600?random=5" alt="Galeri 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="5.png" alt="Galeri 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 6 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=6')">
-                        <img src="https://picsum.photos/600/600?random=6" alt="Galeri 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="6.jpg" alt="Galeri 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 7 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=7')">
-                        <img src="https://picsum.photos/600/600?random=7" alt="Galeri 7" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="7.jpg" alt="Galeri 7" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
                     </div>
-                     <!-- Image 8 -->
                      <div class="group relative aspect-square overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all" onclick="openLightbox('https://picsum.photos/600/600?random=8')">
-                        <img src="https://picsum.photos/600/600?random=8" alt="Galeri 8" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src="8.jpg" alt="Galeri 8" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                             <i data-lucide="zoom-in" class="text-white opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 w-10 h-10"></i>
                         </div>
@@ -334,7 +300,6 @@
             </div>
         </section>
 
-        <!-- LIGHTBOX (Hidden by default) -->
         <div id="lightbox" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-black/90 backdrop-blur-sm transition-opacity opacity-0 pointer-events-none">
             <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gray-300 p-2 z-50">
                 <i data-lucide="x" class="w-8 h-8"></i>
@@ -344,7 +309,6 @@
             </div>
         </div>
 
-        <!-- CONTACT SECTION -->
         <section id="contact" class="bg-gray-50 py-16 scroll-mt-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
@@ -353,7 +317,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Contact Info -->
                     <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-[#0056b3] h-full flex flex-col justify-center">
                         <h2 class="text-2xl font-bold text-gray-800 mb-8">Informasi Kontak</h2>
                         <div class="space-y-8">
@@ -389,7 +352,6 @@
                         </div>
                     </div>
 
-                    <!-- Form -->
                     <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-[#0056b3] h-full">
                         <h2 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan</h2>
                         <form onsubmit="handleContactSubmit(event)" class="space-y-6">
@@ -423,18 +385,15 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <!-- About -->
                 <div>
                     <h3 class="text-white text-lg font-bold mb-4 border-b-2 border-[#f59e0b] inline-block pb-1">Tentang Strada</h3>
                     <p class="text-sm leading-relaxed mb-4">
-                        Perkumpulan Strada adalah lembaga pendidikan Katolik yang mengelola sekolah-sekolah di wilayah Keuskupan Agung Jakarta, termasuk SMP Strada Santa Maria 1.
+                        Perkumpulan Strada adalah lembaga pendidikan Katolik yang mengelola sekolah-sekolah Katolik di Indonesia, termasuk SMP Strada Santa Maria 1.
                     </p>
                 </div>
-                <!-- Contact -->
                 <div>
                     <h3 class="text-white text-lg font-bold mb-4 border-b-2 border-[#f59e0b] inline-block pb-1">Hubungi Kami</h3>
                     <ul class="space-y-3 text-sm">
@@ -452,7 +411,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- Social -->
                 <div>
                     <h3 class="text-white text-lg font-bold mb-4 border-b-2 border-[#f59e0b] inline-block pb-1">Ikuti Kami</h3>
                     <div class="flex space-x-4 mb-6">
@@ -472,44 +430,6 @@
         </div>
     </footer>
 
-    <!-- CHAT WIDGET (Visual Only) -->
-    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <!-- Chat Window -->
-        <div id="chat-window" class="hidden mb-4 bg-white rounded-2xl shadow-2xl w-80 sm:w-96 overflow-hidden border border-gray-200 flex-col h-[500px] animate-fade-in origin-bottom-right">
-            <div class="bg-[#0056b3] p-4 flex justify-between items-center text-white">
-                <div class="flex items-center space-x-2">
-                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <h3 class="font-semibold">Asisten Virtual Strada</h3>
-                </div>
-                <button onclick="toggleChat()" class="text-white hover:bg-blue-700 p-1 rounded transition">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-            <div class="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50" id="chat-messages">
-                <div class="flex justify-start">
-                    <div class="bg-white text-gray-800 border border-gray-100 rounded-2xl rounded-bl-none p-3 text-sm shadow-sm max-w-[80%]">
-                        <p>Halo! Ada yang bisa saya bantu mengenai SMP Strada Santa Maria 1 hari ini?</p>
-                        <span class="text-[10px] mt-1 block opacity-70 text-gray-400">Baru saja</span>
-                    </div>
-                </div>
-            </div>
-            <div class="p-3 bg-white border-t border-gray-200">
-                <form onsubmit="handleChatSubmit(event)" class="flex items-center space-x-2">
-                    <input type="text" id="chat-input" placeholder="Tanya tentang sekolah..." class="flex-1 px-4 py-2 bg-gray-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#0056b3] focus:bg-white transition-all" />
-                    <button type="submit" class="p-2 bg-[#0056b3] text-white rounded-full hover:bg-blue-700 transition-colors shadow-sm">
-                        <i data-lucide="send" class="w-4 h-4"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Chat Button -->
-        <button onclick="toggleChat()" id="chat-btn" class="bg-[#0056b3] hover:bg-blue-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300">
-            <i data-lucide="message-circle" class="w-7 h-7"></i>
-        </button>
-    </div>
-
-    <!-- Scripts -->
     <script>
         // Initialize Icons
         lucide.createIcons();
@@ -600,64 +520,8 @@
             }, 500);
         }
 
-        // Chat Widget Logic
-        const chatWindow = document.getElementById('chat-window');
-        const chatBtn = document.getElementById('chat-btn');
-        const chatMessages = document.getElementById('chat-messages');
-        const chatInput = document.getElementById('chat-input');
-        let isChatOpen = false;
-
-        function toggleChat() {
-            isChatOpen = !isChatOpen;
-            if (isChatOpen) {
-                chatWindow.classList.remove('hidden');
-                chatWindow.style.display = 'flex';
-                chatBtn.classList.replace('bg-[#0056b3]', 'bg-red-500');
-                chatBtn.classList.replace('hover:bg-blue-600', 'hover:bg-red-600');
-                chatBtn.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
-                lucide.createIcons();
-            } else {
-                chatWindow.classList.add('hidden');
-                chatWindow.style.display = 'none';
-                chatBtn.classList.replace('bg-red-500', 'bg-[#0056b3]');
-                chatBtn.classList.replace('hover:bg-red-600', 'hover:bg-blue-600');
-                chatBtn.innerHTML = '<i data-lucide="message-circle" class="w-7 h-7"></i>';
-                lucide.createIcons();
-            }
-        }
-
-        function handleChatSubmit(e) {
-            e.preventDefault();
-            const text = chatInput.value.trim();
-            if(!text) return;
-
-            // Add user message
-            const userDiv = document.createElement('div');
-            userDiv.className = 'flex justify-end';
-            userDiv.innerHTML = `
-                <div class="bg-[#0056b3] text-white rounded-2xl rounded-br-none p-3 text-sm shadow-sm max-w-[80%]">
-                    <p>${text}</p>
-                    <span class="text-[10px] mt-1 block opacity-70 text-blue-100">Baru saja</span>
-                </div>
-            `;
-            chatMessages.appendChild(userDiv);
-            chatInput.value = '';
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            // Mock Bot Reply
-            setTimeout(() => {
-                const botDiv = document.createElement('div');
-                botDiv.className = 'flex justify-start';
-                botDiv.innerHTML = `
-                    <div class="bg-white text-gray-800 border border-gray-100 rounded-2xl rounded-bl-none p-3 text-sm shadow-sm max-w-[80%]">
-                        <p>Terima kasih atas pesan Anda. Karena ini adalah versi demo HTML, saya belum terhubung ke otak AI saya. Silakan hubungi sekolah via WhatsApp atau telepon untuk respon cepat.</p>
-                        <span class="text-[10px] mt-1 block opacity-70 text-gray-400">Baru saja</span>
-                    </div>
-                `;
-                chatMessages.appendChild(botDiv);
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 1000);
-        }
+        // Chat Widget Logic (Removed - Keeping functions only for other uses if any, but they are gone now)
+        // Removed Chat Widget HTML and JavaScript functions (toggleChat, handleChatSubmit) completely.
     </script>
 </body>
 </html>
